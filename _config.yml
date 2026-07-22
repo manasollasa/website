@@ -1,0 +1,37 @@
+title: Mānasollāsa Foundation
+tagline: The encyclopedic expanse of Indian thought
+description: >-
+  With reverence to the Chalukya monarch Someshwara, the Mānasollāsa Foundation
+  is dedicated to the encyclopedic expanse of Indian thought — science, arts,
+  history, polity, sport, and the everyday.
+
+# Set to "/your-repo-name" if serving from a project page
+# (https://username.github.io/your-repo-name). Leave empty for a user/org
+# page or a custom domain.
+baseurl: ""
+url: ""
+
+# Contact details
+contact:
+  address_lines:
+    - 43 Workspace, 232, 9th Main Road
+    - 1st Block, Kalyana Nagar
+    - Bangalore 560043
+  email: hello@manasollasa.org
+
+# Collections drive the Projects and Events sections. output:false means the
+# entries render inline on the one-pager rather than as separate pages.
+collections:
+  projects:
+    output: false
+  events:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+plugins:
+  - jekyll-seo-tag
