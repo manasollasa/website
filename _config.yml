@@ -19,6 +19,12 @@ contact:
     - Bangalore 560043
   email: hello@manasollasa.org
 
+# Google Analytics (GA4) measurement ID, e.g. "G-XXXXXXXXXX". Leave blank to
+# disable. Only loads when jekyll.environment is "production" — GitHub Pages
+# builds are always production, so `bundle exec jekyll serve` locally stays
+# untracked.
+google_analytics: ""
+
 # Collections drive the Projects and Events sections. output:false means the
 # entries render inline on the one-pager rather than as separate pages.
 collections:

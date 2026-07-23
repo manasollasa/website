@@ -21,6 +21,26 @@ title: Home
   </div>
 </section>
 
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head measure">
+      <span class="kicker">Ongoing work</span>
+      <h2>Projects</h2>
+      <p class="section-intro">Long-form studies that carry the encyclopedia's questions into new work — translation, music, design, and study.</p>
+    </div>
+    <div class="cards">
+      {% assign projects = site.projects | sort: 'order' %}
+      {% for p in projects %}
+      <div class="card">
+        <span class="kicker">{{ p.category }}</span>
+        <h3>{{ p.title }}</h3>
+        {{ p.content }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section" id="contact">
   <div class="wrap">
     <div class="section-head measure">

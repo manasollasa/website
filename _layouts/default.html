@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Grantha&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% seo %}
+  {% if site.google_analytics != "" and jekyll.environment == "production" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
@@ -21,6 +30,7 @@
         <svg class="bl" viewBox="0 0 210 14" width="210" height="14"><text x="0" y="11" textLength="200" lengthAdjust="spacing" font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-size="11" fill="#444141">FOUNDATION</text></svg>
       </a>
       <nav class="nav">
+        <a href="#projects">Projects</a>
         <a href="#events">Events</a>
         <a href="#contact">Contact</a>
       </nav>
