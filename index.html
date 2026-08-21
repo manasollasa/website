@@ -26,16 +26,15 @@ title: Home
     <div class="section-head measure">
       <span class="kicker">Ongoing work</span>
       <h2>Projects</h2>
-      <p class="section-intro">Long-form studies that carry the encyclopedia's questions into new work — translation, music, design, and study.</p>
     </div>
     <div class="cards">
       {% assign projects = site.projects | sort: 'order' %}
       {% for p in projects %}
-      <div class="card">
-        <span class="kicker">{{ p.category }}</span>
+      <a class="card" href="{{ p.link }}">
+        <span class="kicker">{{ p.host }}</span>
         <h3>{{ p.title }}</h3>
         {{ p.content }}
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>
@@ -46,7 +45,6 @@ title: Home
     <div class="section-head measure">
       <span class="kicker">Get in touch</span>
       <h2>Contact</h2>
-      <p class="section-intro">Write to us about collaborations, proposals, or attending an event.</p>
     </div>
     <div class="contact-grid">
       <!-- Google Form wiring: replace FORM_ID with your form's ID and each
@@ -86,13 +84,13 @@ title: Home
 
 <section class="section" id="events">
   <div class="wrap">
-    <div class="section-head measure">
-      <span class="kicker">A platform for talks</span>
+    <div class="section-head events-head">
       <h2>Events</h2>
-      <p class="section-intro">Talks, salons, and gatherings — conversations held in the open, grounded in primary sources.</p>
+      <a class="btn" href="https://luma.com/manasollasa">Subscribe</a>
     </div>
+    {% if site.events and site.events.size > 0 %}
+    {% assign events = site.events | sort: 'date' %}
     <div class="list">
-      {% assign events = site.events | sort: 'date' %}
       {% for e in events %}
       <div class="event">
         <div class="date"><span class="d">{{ e.date | date: '%d' }}</span><span class="m">{{ e.date | date: '%b' }}</span></div>
@@ -104,6 +102,9 @@ title: Home
       </div>
       {% endfor %}
     </div>
+    {% else %}
+    <p class="empty">No events are scheduled at present.</p>
+    {% endif %}
   </div>
 </section>
 

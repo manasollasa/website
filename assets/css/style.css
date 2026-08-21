@@ -125,14 +125,15 @@ img { display: block; max-width: 100%; }
 .lead { font-size: 21px; line-height: 1.55; color: var(--color-neutral-800); }
 
 /* — teaser cards on home — */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--color-divider);
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--color-divider);
   border: 1px solid var(--color-divider); margin: 8px 0 72px; }
 .card { background: var(--color-bg); padding: 32px 28px; text-decoration: none; color: var(--color-text); display: block; }
 .card:hover { background: var(--color-neutral-100); color: var(--color-text); }
 .card h3 { margin-bottom: var(--space-2); }
-.card p { font-size: 15px; color: var(--color-neutral-700); margin-bottom: var(--space-3); }
+.card p { font-size: 15px; color: var(--color-neutral-700); margin-bottom: 0; }
 .card .more { font-family: var(--font-heading); font-weight: 600; font-size: 14px;
   letter-spacing: 0.02em; color: var(--color-accent-700); }
+.card .kicker { text-transform: none; letter-spacing: 0.04em; font-size: 14px; }
 
 /* — buttons (outlined) — */
 .btn {
@@ -163,6 +164,13 @@ img { display: block; max-width: 100%; }
 .event .where { font-family: var(--font-heading); font-weight: 600; font-size: 13px;
   letter-spacing: 0.06em; color: var(--color-neutral-700); }
 .event p { margin: var(--space-2) 0 0; color: var(--color-neutral-800); }
+
+.section-head.events-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: var(--space-4); flex-wrap: wrap; max-width: none;
+}
+.section-head.events-head h2 { margin-bottom: 0; }
+.empty { color: var(--color-neutral-700); font-style: italic; margin: 8px 0 0; }
 
 /* — footer — */
 .site-footer { border-top: 1px solid var(--color-divider); margin-top: 24px; }
@@ -214,7 +222,11 @@ img { display: block; max-width: 100%; }
   .hero-split { grid-template-columns: 1fr; gap: 32px; }
   .lockup { max-width: 100%; margin: 0 auto; }
   .hero-desc { border-left: 0; border-top: 1px solid var(--color-divider); padding-left: 0; padding-top: 28px; }
-  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+  .site-header .wrap {
+    flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; gap: var(--space-4);
+  }
+  .nav { justify-content: center; }
   .cards { grid-template-columns: 1fr; }
   .lockup .l-name { font-size: 46px; }
   .lockup .l-brahmi { font-size: 22px; }
