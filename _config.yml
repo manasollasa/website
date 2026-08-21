@@ -11,6 +11,14 @@ description: >-
 baseurl: ""
 url: ""
 
+contact:
+  place: Mānasollāsa Foundation
+  address_lines:
+    - 43 Workspace, 232, 9th Main Road
+    - 1st Block, Kalyana Nagar
+    - Bangalore 560043
+  email: info@manasollasa.org
+
 # Google Analytics (GA4) measurement ID, e.g. "G-XXXXXXXXXX". Leave blank to
 # disable. Only loads when jekyll.environment is "production" — GitHub Pages
 # builds are always production, so `bundle exec jekyll serve` locally stays

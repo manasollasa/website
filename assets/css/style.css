@@ -194,6 +194,14 @@ img { display: block; max-width: 100%; }
 .section-head h2 { margin-top: var(--space-2); font-size: 36px; }
 .section-intro { font-size: 18px; color: var(--color-neutral-700); margin: 0; }
 
+/* — contact — */
+.contact-info .addr { font-style: normal; font-size: 17px; line-height: 1.75;
+  color: var(--color-neutral-800); margin: 10px 0 0; }
+.contact-info .place {
+  display: block; font-family: var(--font-heading); font-weight: 600;
+  font-size: 20px; color: var(--color-text); margin-bottom: 4px;
+}
+
 @media (max-width: 760px) {
   .hero-split { grid-template-columns: 1fr; gap: 32px; }
   .lockup { max-width: 100%; margin: 0 auto; }

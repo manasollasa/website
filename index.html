@@ -40,6 +40,24 @@ title: Home
   </div>
 </section>
 
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head measure">
+      <span class="kicker">Get in touch</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-info">
+      <span class="kicker">Visit</span>
+      <address class="addr">
+        <span class="place">{{ site.contact.place }}</span>
+        {% for line in site.contact.address_lines %}{{ line }}<br>{% endfor %}
+      </address>
+      <span class="kicker" style="display:block; margin-top: 28px;">Write</span>
+      <p class="addr"><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="events">
   <div class="wrap">
     <div class="section-head events-head">
