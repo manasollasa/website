@@ -105,8 +105,6 @@ img { display: block; max-width: 100%; }
 .lockup { width: 100%; max-width: 520px; }
 .lockup .ll { display: block; width: 100%; height: auto; }
 .lockup .ll + .ll { margin-top: 10px; }
-.lockup .nm { display: none; }
-.lockup .nm.is-shown { display: block; }
 .hero-desc { border-left: 1px solid var(--color-divider); padding-left: 48px; }
 .hero-desc .hero-tagline { margin: 0; }
 .hero-tagline {
@@ -198,23 +196,6 @@ img { display: block; max-width: 100%; }
 .section-intro { font-size: 18px; color: var(--color-neutral-700); margin: 0; }
 
 /* — contact — */
-.contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
-.cform { display: grid; gap: 18px; }
-.form-field { display: grid; gap: 6px; }
-.form-field label {
-  font-family: var(--font-heading); font-weight: 600; font-size: 12px;
-  letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-800);
-}
-.form-field input, .form-field textarea {
-  font-family: var(--font-body); font-size: 16px; color: var(--color-text);
-  background: var(--color-surface); border: 1px solid var(--color-divider);
-  border-radius: 4px; padding: 11px 13px; width: 100%;
-}
-.form-field textarea { min-height: 132px; resize: vertical; }
-.cform .btn { justify-self: start; }
-.form-status { display: none; margin: 0; font-family: var(--font-heading);
-  font-style: italic; font-size: 16px; color: var(--color-accent-700); }
-.form-status.is-visible { display: block; }
 .contact-info .addr { font-style: normal; font-size: 17px; line-height: 1.75;
   color: var(--color-neutral-800); margin: 10px 0 0; }
 
@@ -228,13 +209,9 @@ img { display: block; max-width: 100%; }
   }
   .nav { justify-content: center; }
   .cards { grid-template-columns: 1fr; }
-  .lockup .l-name { font-size: 46px; }
-  .lockup .l-brahmi { font-size: 22px; }
-  .lockup .l-sub { font-size: 16px; letter-spacing: 0.34em; }
   .hero { padding: 56px 0 40px; }
   .event { grid-template-columns: 72px 1fr; gap: 18px; }
   .event .date .d { font-size: 26px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .section-head h2 { font-size: 30px; }
   .name-script { font-size: 34px; }
 }

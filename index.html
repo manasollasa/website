@@ -4,16 +4,9 @@ title: Home
 ---
 <section class="hero">
   <div class="wrap hero-split">
-    <div class="lockup" data-name-lock role="img" aria-label="Mānasollāsa Foundation">
-      <svg class="ll" viewBox="0 0 560 46" width="560" height="46"><text x="280" y="34" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Brahmi, serif" font-size="30" fill="#7d5411">𑀫𑀸𑀦𑀲𑁄𑀮𑁆𑀮𑀸𑀲</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Devanagari, serif" font-size="62" fill="#201f1d">मानसोल्लास</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Kannada, serif" font-size="62" fill="#201f1d">ಮಾನಸೋಲ್ಲಾಸ</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Telugu, serif" font-size="62" fill="#201f1d">మానసోల్లాస</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Tamil, serif" font-size="58" fill="#201f1d">மானஸோல்லாஸ</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Grantha, serif" font-size="60" fill="#201f1d">𑌮𑌾𑌨𑌸𑍋𑌲𑍍𑌲𑌾𑌸</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Bengali, serif" font-size="62" fill="#201f1d">মানসোল্লাস</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Malayalam, serif" font-size="62" fill="#201f1d">മാനസോല്ലാസ</text></svg>
-      <svg class="ll nm" data-name-pick viewBox="0 0 560 92" width="560" height="92"><text x="280" y="70" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Noto Sans Gujarati, serif" font-size="62" fill="#201f1d">માનસોલ્લાસ</text></svg>
+    <div class="lockup" role="img" aria-label="Mānasollāsa Foundation">
+      <svg class="ll" viewBox="0 0 560 92" width="560" height="92"><text x="280" y="74" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Cormorant Garamond, Georgia, serif" font-weight="500" font-size="80" fill="#201f1d">Mānasollāsa</text></svg>
+      <svg class="ll" viewBox="0 0 560 30" width="560" height="30"><text x="280" y="23" text-anchor="middle" textLength="540" lengthAdjust="spacing" font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-size="22" fill="#444141">FOUNDATION</text></svg>
     </div>
     <div class="hero-desc">
       <p class="hero-tagline">From the inspiration of the Chalukya monarch Someshwara III, Mānasollāsa is dedicated to expanding the encyclopedic expanse and continuity of our thought — finding joy in intellectual exploration: science, arts, history, polity, sport, and even the mundane inanities of everyday life.</p>
@@ -46,38 +39,13 @@ title: Home
       <span class="kicker">Get in touch</span>
       <h2>Contact</h2>
     </div>
-    <div class="contact-grid">
-      <!-- Google Form wiring: replace FORM_ID with your form's ID and each
-           entry.NUMBER with the real field IDs (view source of your live form,
-           or use the pre-filled-link trick). Submissions post silently to the
-           hidden iframe below. -->
-      <form class="cform"
-            action="https://docs.google.com/forms/d/e/FORM_ID/formResponse"
-            method="post" target="gform-sink">
-        <div class="form-field">
-          <label for="cf-name">Name</label>
-          <input id="cf-name" name="entry.1000001" type="text" autocomplete="name" required>
-        </div>
-        <div class="form-field">
-          <label for="cf-email">Email</label>
-          <input id="cf-email" name="entry.1000002" type="email" autocomplete="email" required>
-        </div>
-        <div class="form-field">
-          <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="entry.1000003" required></textarea>
-        </div>
-        <button class="btn" type="submit">Send message</button>
-        <p class="form-status" role="status">Thank you — your message has been sent.</p>
-      </form>
-
-      <div class="contact-info">
-        <span class="kicker">Visit</span>
-        <address class="addr">
-          {% for line in site.contact.address_lines %}{{ line }}<br>{% endfor %}
-        </address>
-        <span class="kicker" style="display:block; margin-top: 28px;">Write</span>
-        <p class="addr"><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-      </div>
+    <div class="contact-info">
+      <span class="kicker">Visit</span>
+      <address class="addr">
+        {% for line in site.contact.address_lines %}{{ line }}<br>{% endfor %}
+      </address>
+      <span class="kicker" style="display:block; margin-top: 28px;">Write</span>
+      <p class="addr"><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
     </div>
   </div>
 </section>
@@ -107,5 +75,3 @@ title: Home
     {% endif %}
   </div>
 </section>
-
-<iframe name="gform-sink" title="form target" style="display:none"></iframe>
